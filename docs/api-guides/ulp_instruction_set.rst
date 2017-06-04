@@ -250,10 +250,10 @@ Similar considerations apply to ``LD`` and ``ST`` instructions. Consider the fol
    **RSH** *Rdst, Rsrc1, imm*
 
 **Operands**
-  *Rdst* - Register R[0..3]
-  *Rsrc1* - Register R[0..3]
-  *Rsrc2* - Register R[0..3]
-  *Imm* - 16-bit signed value
+  - *Rdst* - Register R[0..3]
+  - *Rsrc1* - Register R[0..3]
+  - *Rsrc2* - Register R[0..3]
+  - *Imm* - 16-bit signed value
 
 **Description**
   The instruction does logical shift to right of source register to number of bits from another source register or 16-bit signed value and store result to the destination register.
@@ -294,9 +294,9 @@ Similar considerations apply to ``LD`` and ``ST`` instructions. Consider the fol
 
 **Examples**::
 
-  1:        MOVE       R1, R2            //R1 = R2 >> R3
+  1:        MOVE       R1, R2            //R1 = R2
 
-  2:        MOVE       R1, 0x03          //R1 = R2 >> 0x03
+  2:        MOVE       R1, 0x03          //R1 = 0x03
 
   3:        .set       value1, 0x03      //constant value1=0x03
             MOVE       R1, value1        //R1 = value1
